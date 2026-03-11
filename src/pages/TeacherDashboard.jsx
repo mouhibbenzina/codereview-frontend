@@ -76,7 +76,7 @@ export default function TeacherDashboard() {
         ) : (
           <div className="grid">
             {classes.map(cls => (
-              <div key={cls._id} className="card" onClick={() => navigate(`/teacher/classes/${cls._id}`, { state: cls })}>
+              <div key={cls._id} className="card" onClick={() => navigate(`/teacher/classes/${cls._id}`)}>
                 <div style={{fontSize:'2rem', marginBottom:'0.5rem'}}>🏫</div>
                 <h3>{cls.name}</h3>
                 <p>{cls.description}</p>

@@ -37,6 +37,7 @@ export default function App() {
           <Route path="/student/classes/:classId" element={<ProtectedRoute role="student"><ClassDetail /></ProtectedRoute>} />
           <Route path="/student/assignments/:assignmentId/submit" element={<ProtectedRoute role="student"><SubmitCode /></ProtectedRoute>} />
           <Route path="/teacher" element={<ProtectedRoute role="teacher"><TeacherDashboard /></ProtectedRoute>} />
+          <Route path="/teacher/classes/:classId" element={<ProtectedRoute role="teacher"><ClassDetail /></ProtectedRoute>} />
           <Route path="/teacher/assignments/:assignmentId/review" element={<ProtectedRoute role="teacher"><ReviewQueue /></ProtectedRoute>} />
         </Routes>
       </BrowserRouter>
